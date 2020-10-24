@@ -1,0 +1,14 @@
+// Preset
+@import
+'./style/preset.scss',
+'./style/typography.scss',
+'./style/variables.scss';
+
+//Navbar
+@import
+"./components/Navbar/Navbar.scss";
+
+//Section Styling
+@import
+"./sections/Front/front_style.scss",
+"./sections/Omnie/omnie_style.scss";

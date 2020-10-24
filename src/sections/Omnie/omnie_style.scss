@@ -1,0 +1,25 @@
+@import '../../style/variables.scss';
+
+.omnie_background{
+    height: 80vh;
+    background-color: $base-color;
+   
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap:50px;
+    align-items: center;
+    .omnie_image{
+        margin-left: 15rem;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.288);
+        img{
+            height: 600px;
+            width: auto;
+        }
+    }
+    .omnie_text{
+        margin-right: 15rem;
+        h3{
+            color: white;
+        }
+    }
+}

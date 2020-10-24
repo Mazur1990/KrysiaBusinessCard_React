@@ -1,0 +1,49 @@
+
+
+.front_background{
+    z-index: 0;
+    height: 120vh;
+    width: 100%;
+    background: url("../../images/Photo by Efdal YILDIZ from Pexels_pexels-efdal-yildiz-917494.jpg");
+    // background-color: red;
+    background-size: cover;
+
+    
+}
+.front_text_intro{
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    top:25%;
+    text-align: center;
+    word-spacing: 15px;
+    
+}
+
+.front_text_box{
+    z-index: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 250px;
+    top:75%;
+    left:75%;
+    right: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    background-color: rgba(143, 93, 47, 0.719);
+    text-align: center;
+    border-radius: 20px;
+    
+    h2{
+
+        margin: 0;
+        padding:10px;
+        color: white;
+        
+    }
+
+}
