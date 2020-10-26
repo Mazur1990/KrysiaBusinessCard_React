@@ -1,0 +1,47 @@
+.zakres_background{
+    height: 90vh;
+    width: 100%;
+    background: url("../../images//tapeta.JPG");
+    background-size: cover;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-rows: 150px;
+    grid-template-areas: 
+      "title title title title"
+      "discription discription discription discription"
+      "footer footer footer footer";
+      
+    h1{
+      place-self: center;
+
+        grid-area: title;
+        padding-top: 30px;
+        text-align: center;
+        color:$text-color;
+    }
+    h2{
+      place-self: center;
+      text-align: center;
+      color:$text-color;
+        grid-area: discription;
+    }
+    .zakresy{
+        place-self: center;
+        align-self: start;
+        text-align: center;
+        color:$text-color;
+        h3{
+            color:$text-color;
+        }
+        .fas{
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.test{
+    height: 100px;
+    width: auto;
+}

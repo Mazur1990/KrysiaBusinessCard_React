@@ -1,7 +1,7 @@
 @import '../../style/variables.scss';
 
 .omnie_background{
-    height: 80vh;
+    height: 60vh;
     background-color: $base-color;
    
     display: grid;
@@ -18,8 +18,14 @@
     }
     .omnie_text{
         margin-right: 15rem;
+        margin-top: -10rem;
+        h2{
+            text-align: center;
+            color:$text-color;
+            text-decoration: underline;
+        }
         h3{
-            color: white;
+            color:$text-color;
         }
     }
 }

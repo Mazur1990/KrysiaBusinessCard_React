@@ -7,7 +7,7 @@ import { Parallax } from 'react-scroll-parallax';
 const Omnie = () => {
     return(
         <div className="omnie_background">
-             <Parallax className="custom-class" y={[200, -25]} tagOuter="figure">
+             <Parallax className="custom-class" y={[15,-27]} tagOuter="figure">
                 <Image />
              </Parallax>
             <OmnieText />

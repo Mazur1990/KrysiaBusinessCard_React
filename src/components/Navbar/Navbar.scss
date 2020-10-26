@@ -41,7 +41,7 @@
     margin:0 15px 0 15px;
     padding: 0.5rem 1rem;
     &:hover{
-        color:$secondary-color;
+        color:white;
     }
 }
 
@@ -61,7 +61,7 @@
 @media screen and (max-width: 960px) {
     .NavbarItems{
         position: fixed;
-        background-color:  rgb(143, 93, 47);
+        background-color: $base-color;
         
 
     }
@@ -80,7 +80,7 @@
 
    
     .nav-menu.active{
-        background-color:  rgb(143, 93, 47);
+        background-color:  $base-color;
         left: 0;
         opacity: 1;
         transition:all 0.5s ease;

@@ -7,6 +7,7 @@ import {Navbar} from "./components/Navbar/Navbar"
 
 import {Front} from "./sections/Front/Front"
 import {Omnie} from "./sections/Omnie/Omnie"
+import {ZakresUslug} from "./sections/ZakresUslug/ZakresUslug"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <ParallaxProvider>
           <Omnie />
         </ParallaxProvider>
+        <ZakresUslug />
     </div>
   );
 }

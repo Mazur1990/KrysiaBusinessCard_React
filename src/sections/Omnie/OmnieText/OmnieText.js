@@ -3,8 +3,9 @@ const OmnieText = () => {
     return(
         
         <div className="omnie_text">
+            <h2>O mnie</h2>
             <h3>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            Witam Cię na mojej stronie. Jestem dyplomowanym psychologiem, absolwentką pięcioletnich studiów psychologicznych na Uniwersytecie Wrocławskim. Aktualnie uczestniczę w szkoleniu psychoterapeutycznym w nurcie Gestalt, atestowanym przez EAGT (European Association for Gestalt Therapy) w Instytucie Integralnej Psychoterapii Gestalt. Praca z ludźmi, towarzyszenie im w ich życiowych wyzwaniach daje mi niesamowitą satysfakcję i radość. Bardzo ważny jest dla mnie szacunek i zaangażowanie w kontakcie z drugim człowiekiem, dlatego do każdej osoby podchodzę indywidualnie, z otwartością i akceptacją, tworząc bezpieczną przestrzeń w relacji. Prywatnie spełniam się jako mama żywiołowego chłopca, biegam na nartach, uwielbiam góry, a w wolnym czasie maluję akwarelami i śpiewam.
             </h3>
         </div>
     )
