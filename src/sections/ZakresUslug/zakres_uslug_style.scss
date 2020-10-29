@@ -3,45 +3,58 @@
     width: 100%;
     background: url("../../images//tapeta.JPG");
     background-size: cover;
+    display:grid;
     justify-content: center;
-    display: grid;
+
+
     grid-template-columns: 250px 250px 250px 250px;
     grid-template-rows: 150px;
     grid-template-areas: 
       "title title title title"
       "discription discription discription discription"
-      "footer footer footer footer";
+      "test test test test";
       
     h1{
       place-self: center;
-
-        grid-area: title;
-        padding-top: 30px;
-        text-align: center;
-        color:$text-color;
+      grid-area: title;
+      display: flex;
+      justify-content:center;
+      padding-top: 30px;
+      text-align: center;
+      color:$base-color;
     }
     h2{
       place-self: center;
       text-align: center;
-      color:$text-color;
-        grid-area: discription;
+      color:$base-color;
+      grid-area: discription;
     }
-    .zakresy{
-        place-self: center;
-        align-self: start;
-        text-align: center;
-        color:$text-color;
-        h3{
-            color:$text-color;
-        }
-        .fas{
-            font-size: 3rem;
-            margin-bottom: 15px;
-        }
+    .test{
+      grid-area: test;
+      display: flex;
+      justify-content: space-around;
+      .zakresy{
+          
+        
+          place-self: center;
+          align-self: start;
+          justify-content: center;
+          text-align: center;
+          color:$base-color;
+          h3{
+              color:$text-color;
+          }
+          .fas{
+              font-size: 3rem;
+              margin-bottom: 15px;
+          }
+          .zakresy_list{
+           list-style-type: disc;
+      
+  
+          
+          }
+      }
     }
 }
 
-.test{
-    height: 100px;
-    width: auto;
-}

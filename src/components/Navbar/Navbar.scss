@@ -1,7 +1,7 @@
 @import '../../style/variables.scss';
 
 .NavbarItems{
-    background-color: $base-color;
+    background-color: $secondary-color;
     position: fixed;
     height: 80px;
     width: 100%;
@@ -9,6 +9,7 @@
     justify-content: center;
     align-items: center;
     z-index: 2;
+    border-bottom: 2px solid $base-color;
 }
 
 .navbar-logo {

@@ -24,8 +24,15 @@
             color:$text-color;
             text-decoration: underline;
         }
-        h3{
-            color:$text-color;
+        .omnie_box{
+            background-color: $secondary-color;
+            clip-path: polygon(2% 0, 98% 0, 100% 4%, 100% 96%, 98% 100%, 2% 100%, 0 96%, 0 4%);
+            
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.288);
+            h3{
+                padding: 25px;
+                color:$base-color;
+            }
         }
     }
 }
