@@ -2,7 +2,7 @@ import Item from 'antd/lib/list/Item';
 import React, { Component } from 'react';
 import { MenuItems} from "./MenuItems"
 // import { PlusCircleOutlined } from '@ant-design/icons';
-import {Button} from '../Button'
+import Icon from '../../images/logo-icon.svg'
 
 
 class Navbar extends Component {
@@ -17,7 +17,10 @@ class Navbar extends Component {
     render() {
         return (
             <nav className="NavbarItems">
-                <h4 className="navbar-logo">Śmieszniak<i className="fab fa-react"></i></h4>
+                    <h4 className="navbar-logo">
+                  
+                        <i className="fab navbar-icon" ></i>
+                    </h4>
                 <div className="menu-icon" onClick={this.handleClick}>
                     <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                 </div>

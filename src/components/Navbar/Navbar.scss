@@ -3,7 +3,7 @@
 .NavbarItems{
     background-color: $secondary-color;
     position: fixed;
-    height: 80px;
+    height: 50px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -19,7 +19,15 @@
     cursor: pointer;
     margin-bottom: 0;
 }
-
+.navbar-icon{
+    background-color: $base-color;
+    mask: url("../../images/logo-icon.svg") no-repeat center;
+    mask-size: contain;
+    height: 45px;
+    width: 45px;
+    
+    
+}
 
 .nav-menu{
     display: grid;
@@ -46,6 +54,41 @@
     }
 }
 
+
+    // width: 100px;
+
+
+    a {
+        
+        color: #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.15em;
+        
+        display: inline-block;
+        padding: 15px 20px;
+        position: relative;
+      }
+      a:after {    
+        background-color: $base-color;
+        mask: url("../../images/logo-hr.svg") no-repeat center;
+        mask-size: contain;  
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 10px;
+        left: 0%;
+        position: absolute;
+        background: #fff;
+        transition: width 0.3s;
+        width: 0;
+      }
+      a:hover:after { 
+        width: 100%; 
+        left: 0%; 
+      }
+
 .fa-bars,
 .fa-times {
     color:$nav-text;
@@ -62,7 +105,7 @@
 @media screen and (max-width: 960px) {
     .NavbarItems{
         position: fixed;
-        background-color: $base-color;
+        // background-color: $base-color;
         
 
     }
@@ -70,9 +113,9 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 450px;
+        // height: 450px;
         position: absolute;
-        top:80px;
+        top:50px;
         left:-100%;
         opacity: 1;
         transition:all 0.5s ease;
@@ -81,7 +124,7 @@
 
    
     .nav-menu.active{
-        background-color:  $base-color;
+        background-color:  $secondary-color;
         left: 0;
         opacity: 1;
         transition:all 0.5s ease;
@@ -93,8 +136,9 @@
         width: 100%;
         display: table;
         &:hover{
-            color:$secondary-color;
+            color:white;
         }
+     
     }
     .navbar-logo{
         position: absolute;

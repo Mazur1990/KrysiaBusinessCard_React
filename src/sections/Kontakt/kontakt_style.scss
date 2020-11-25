@@ -1,0 +1,33 @@
+.kontakt_background{
+    background-color: $base-color;
+    height: 70vh;
+    width: 100%;
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    .kontakt_title{
+        display: flex;
+        justify-content: center;
+    }
+    .kontakt_box{
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 6%;
+        .kontakt_left_box, .kontakt_right_box{
+            margin: 25px;
+        }
+        .kontakt_middle_box{
+            img{
+                height: 350px;
+            }
+
+        }
+        .kontakt_right_box{
+
+        }
+    }
+}
