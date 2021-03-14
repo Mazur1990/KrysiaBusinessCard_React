@@ -1,60 +1,91 @@
 .zakres_background{
-    height: 90vh;
-    width: 100%;
-    background: url("../../images//tapeta.JPG");
+    height: 100%;
+    width: auto;
+    // background:url("../../images/9.jpg");
+    background:url("../../images/6.jpg")rgba(0, 0, 0, 0.165);
+    background-blend-mode:darken;
     background-size: cover;
-    display:grid;
-    justify-content: center;
-
-
-    grid-template-columns: 250px 250px 250px 250px;
-    grid-template-rows: 150px;
-    grid-template-areas: 
-      "title title title title"
-      "discription discription discription discription"
-      "test test test test";
+    
+    .zakres_title{
+      padding-top: 3rem;
+      margin-bottom: 2rem;
+      width: 100%;
+      h1{
+        text-align: center;
+        color:$base-color;
+        width: 100%;
+        &:after{    
+            mask: url("../../images/logo-hr.svg") no-repeat center;
+            mask-size: contain;  
+            background: none repeat scroll 0 0 transparent;
+            bottom: 0;
+            content: "";
+            display: block;
+            height: 20px;
+            background: $base-color;
+            width: 100%;
+          }
+    
+        }
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+  }
       
-    h1{
-      place-self: center;
-      grid-area: title;
-      display: flex;
-      justify-content:center;
-      padding-top: 30px;
-      text-align: center;
-      color:$base-color;
-    }
     h2{
-      place-self: center;
+      padding: 5px;
       text-align: center;
       color:$base-color;
-      grid-area: discription;
     }
-    .test{
-      grid-area: test;
+    .columns{
+      padding: 20px;
+      margin-top: 5%;
+      width: 100%;
       display: flex;
       justify-content: space-around;
+      @media (max-width: 767.98px) {
+        flex-direction: column;
+      }
       .zakresy{
-          
-        
-          place-self: center;
           align-self: start;
           justify-content: center;
-          text-align: center;
           color:$base-color;
           h3{
-              color:$text-color;
+            color:$text-color;
           }
           .fas{
-              font-size: 3rem;
-              margin-bottom: 15px;
+            font-size: 3rem;
+            margin-bottom: 15px;
           }
-          .zakresy_list{
-           list-style-type: disc;
-      
-  
-          
+          ul{
+            list-style: none;
+            padding-left: 0;
+            li{
+              margin-right: 20px;
+              position: relative;
+              font-size: 150%;
+              line-height: 1.5em;
+              padding-left: 40px;
+              &:before{
+                content: '';
+                width: 25px;
+                height: 25px;
+                position: absolute;
+                background-image: url("../../images/logo-icon-white.svg");
+                background-repeat: no-repeat;
+                background-size:cover;
+                background-position: center;
+                left: 0%;
+                // top: 50%;
+                // transform: translateY(-50%);
+              }
+            }
           }
       }
     }
 }
+
 

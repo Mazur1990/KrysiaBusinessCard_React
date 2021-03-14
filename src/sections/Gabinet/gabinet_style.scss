@@ -1,8 +1,13 @@
 .gabinet_background{
-    background: url("../../images/2.jpg");
+    background:url("../../images/2.JPG");
     height: 60vh;
     width: 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-position-y: -70px;
     background-size: cover;
+    .gabinet_background-gradient{
+      height: 100%;
+      background:linear-gradient(0deg, rgba(71, 65, 51, 0.522), rgba(218, 160, 68, 0.371));
+    }
 }

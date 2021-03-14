@@ -4,11 +4,11 @@ import React from 'react';
 const Zakresy = ({className, text}) => {
     return(
         <div className="zakresy">
-            <i className={className}></i>
+            {/* <i className={className}></i> */}
             <div>
-            <ul className="zakresy_list">
+            <ul className="">
                 {text && text.map((item) =>
-                <li>{item}</li>
+                <li className='test'>{item}</li>
                 )}
             </ul>
         </div>

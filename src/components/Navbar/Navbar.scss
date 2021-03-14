@@ -3,12 +3,14 @@
 .NavbarItems{
     background-color: $secondary-color;
     position: fixed;
+    top: 0;
+    left: 0;
     height: 50px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2;
+    z-index: 99;
     border-bottom: 2px solid $base-color;
 }
 
@@ -25,6 +27,7 @@
     mask-size: contain;
     height: 45px;
     width: 45px;
+    margin-top: 9px;
     
     
 }
@@ -56,38 +59,42 @@
 
 
     // width: 100px;
+    li{
+        a {
+        
+            color: #fff;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 0.15em;
+            
+            display: inline-block;
+            padding: 15px 20px;
+            position: relative;
+            &:after {    
+                background-color: $base-color;
+                mask: url("../../images/logo-hr.svg") no-repeat center;
+                mask-size: contain;  
+                background: none repeat scroll 0 0 transparent;
+                bottom: 0;
+                content: "";
+                display: block;
+                height: 10px;
+                left: 0%;
+                position: absolute;
+                background: #fff;
+                transition: width 0.3s;
+                width: 0;
+              }
+              
+              &:hover:after { 
+                width: 100%; 
+                left: 0%; 
+              }
+          }
+    }
 
 
-    a {
-        
-        color: #fff;
-        text-transform: uppercase;
-        text-decoration: none;
-        letter-spacing: 0.15em;
-        
-        display: inline-block;
-        padding: 15px 20px;
-        position: relative;
-      }
-      a:after {    
-        background-color: $base-color;
-        mask: url("../../images/logo-hr.svg") no-repeat center;
-        mask-size: contain;  
-        background: none repeat scroll 0 0 transparent;
-        bottom: 0;
-        content: "";
-        display: block;
-        height: 10px;
-        left: 0%;
-        position: absolute;
-        background: #fff;
-        transition: width 0.3s;
-        width: 0;
-      }
-      a:hover:after { 
-        width: 100%; 
-        left: 0%; 
-      }
+
 
 .fa-bars,
 .fa-times {

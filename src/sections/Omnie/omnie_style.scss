@@ -1,58 +1,205 @@
 @import '../../style/variables.scss';
 
 .omnie_background{
-    height: 60vh;
+    height: 100%;
     background-color: $base-color;
-   
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-gap:50px;
-    align-items: center;
-    .omnie_image{
-        margin-left: 15rem;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.288);
-        img{
-            height: 600px;
-            width: auto;
+    padding-bottom: 45px;
+    // overflow: hidden;
+    .row{
+        @media  (min-width: 992px) {
+
         }
     }
+
+    img{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.288);
+        height:600px;
+        width: auto;
+ 
+    }
+    .omnie_container{
+        display: flex;
+        @media (min-width: 0px) and (max-width: 991.98px) {
+            flex-direction: column;
+        }
+    }
+ 
     .omnie_text{
-        margin-right: 15rem;
-        margin-top: -10rem;
-        h2{
+        
+        margin-top: 3rem;
+        h1{
             text-align: center;
             color:$text-color;
-            text-decoration: underline;
+            position: relative;
+            margin-top: 20px;
+            &:after{    
+                background-color: $base-color;
+                mask: url("../../images/logo-hr.svg") no-repeat center;
+                mask-size: contain;  
+                background: none repeat scroll 0 0 transparent;
+                bottom: 0;
+                content: "";
+                display: block;
+                height: 20px;
+                background: $text-color;
+                width: 100%;
+
+              }
+       
         }
-        .omnie_box{
-            background-color: $secondary-color;
    
+        .omnie_box{
+            
+            background-color: $secondary-color;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 5px 0 rgba(0, 0, 0, 0.288);
+            padding:20px;
+            width: 100%;
             h3{
-                padding: 25px;
+                font-size: 1rem;
+                text-indent: 1rem;
+                padding-bottom: 5px;
                 color:$base-color;
+                text-align: justify;
             }
-            &:before {
-                content: "";
-                display: block;
-                position: absolute;
-                border: 50px solid transparent;
-                border-bottom: 50px solid $base-color;
-                bottom: -32%;
-                left: 36%;
-                box-shadow: 0px 7px 6px -9px black;
-                transform: rotate(315deg);
-              }
-            &:after {
-                content: "";
-                display: block;
-                position: absolute;
-                border: 50px solid transparent;
-                border-bottom: 50px solid $base-color;
-                bottom: -71%;
-                right: 175px;
-                box-shadow: 0px 7px 6px -9px black;
-                transform: rotate(135deg);
-              }
+            // &:before {
+            //     content: "";
+            //     display: block;
+            //     position: absolute;
+            //     border: 50px solid transparent;
+            //     border-bottom: 50px solid $base-color;
+            //     bottom: 75%;
+            //     left: -8%;
+            //     box-shadow: 0px 7px 6px -9px black;
+            //     transform: rotate(315deg);
+            //   }
+            // &:after {
+
+            //     content: "";
+            //     display: block;
+            //     position: absolute;
+            //     border: 50px solid transparent;
+            //     border-bottom: 50px solid $base-color;
+            //     bottom: -9%;
+            //     right: -8%;
+            //     box-shadow: 0px 7px 10px -9px black;
+            //     transform: rotate(135deg);
+
+            //   }
+    
+              
+
         }
     }
 }
+
+@media (max-width: 575.98px) {
+    .omnie_background{
+        height: 100%;
+        img{
+            height:300px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+        .omnie_text{
+            margin-top: -2rem;
+            .omnie_box{
+                h3{
+                    font-size: 1rem;
+                }
+                &:before {
+                   display: none;
+                  }
+                &:after {
+                    display: none;
+                  }
+            }
+        }
+    }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .omnie_background{
+        img{
+            height:400px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+        .omnie_text{
+            margin-top: -2rem;
+            .omnie_box{
+       
+                &:before {
+                    // display: none;
+                    bottom: 83%;
+                    left: -9%;
+                  }
+                &:after {
+                    bottom: -9%;
+                    right: -8%;
+                  }
+ 
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .omnie_background{
+        img{
+            height:500px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+        .omnie_text{
+            margin-top: -2rem;
+            .omnie_box{
+         
+                &:before {
+                    bottom: 81%;
+                    left: -7%;
+                  }
+                &:after {
+                    bottom: -13%;
+                    right: -7%;
+                  }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .omnie_background{
+        img{
+            height:500px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .omnie_text{
+            margin-top: 1rem;
+            .omnie_box{
+          
+                &:before {
+                    bottom: 81%;
+                    left: -10%;
+                  }
+                &:after {
+                    bottom: -8%;
+                    right: -9%;
+                  }
+            }
+        }
+    }
+}
+
+// @media (min-width: 1200px) and (max-width:1599px) {
+//     .omnie_background{
+//         height: 100%;
+//         padding-bottom: 40px;
+//     }
+// }

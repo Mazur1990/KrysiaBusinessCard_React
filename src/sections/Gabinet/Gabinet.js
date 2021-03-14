@@ -3,6 +3,7 @@ const Gabinet = () => {
     return(
         <>
         <div className="gabinet_background">
+            <div className="gabinet_background-gradient"></div>
         </div>
         </>
     )
