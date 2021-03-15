@@ -21,9 +21,9 @@ const ZakresUslug = () => {
                     Towarzyszę w odzyskiwaniu równowagi emocjonalnej oraz poczucia kontroli nad własnym życiem. Szczególnie dbam o prywatność oraz anonimowość moich klientów, kieruję się kodeksem etyczno-zawodowym psychologa, a swoją pracę poddaję superwizji. 
                     </h2>
                 <div className="columns">
-                    <Zakresy className="" text={columnOne} />
-                    <Zakresy className="" text={columnTwo} />
-                    <Zakresy className="" text={columnThree} />
+                    <Zakresy  text={columnOne} />
+                    <Zakresy  text={columnTwo} />
+                    <Zakresy  text={columnThree} />
                 </div>
                 </div>
 

@@ -10,6 +10,7 @@ class Navbar extends Component {
     state = { clicked: false}
 
     handleClick = () => {
+        console.log('click')
         this.setState({clicked: !this.state.clicked})
     }
 
@@ -46,7 +47,6 @@ class Navbar extends Component {
                         )
                     })}
                 </ul>
-                {/* <Button>Sign up</Button> */}
             </nav>
         )
     }

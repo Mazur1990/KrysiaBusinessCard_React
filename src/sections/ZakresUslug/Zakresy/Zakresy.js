@@ -8,7 +8,7 @@ const Zakresy = ({className, text}) => {
             <div>
             <ul className="">
                 {text && text.map((item) =>
-                <li className='test'>{item}</li>
+                <li className='' key={item}>{item}</li>
                 )}
             </ul>
         </div>

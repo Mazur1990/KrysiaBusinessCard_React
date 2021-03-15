@@ -1,9 +1,7 @@
 //FONTS
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
-
 $font-size-base: 1rem;
 $fontFamily: 'Lato', sans-serif;
-
 html{
     font-size: 1rem;
 }
@@ -45,15 +43,12 @@ h5, .h5{
 h6, h6{
     font-size: 1rem;
 }
-
-
 a{
     color: #000;
     &:hover{
         text-decoration: none;
     }
 }
-
 li{
     font-size: 1rem;
     font-weight: 600;

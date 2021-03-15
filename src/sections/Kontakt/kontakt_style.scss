@@ -7,6 +7,7 @@
     flex-direction: column;
     text-align: center;
     padding-bottom: 8%;
+    overflow: hidden;
     .kontakt_title{
         margin-bottom: 2rem;
         padding-top: 3rem;
@@ -30,8 +31,8 @@
         }
     }
     .kontakt_box{
-        height: 500px;
-        width: 80%;
+        height: auto;
+        width:70%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -40,7 +41,9 @@
         background-color: $secondary-color;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 5px 0 rgba(0, 0, 0, 0.288);
         color: white;
-
+        @media (max-width: 1200px) {
+            width: 80%;
+        }
         .kontakt_middle_box{
             img{
                 height: auto;
@@ -48,17 +51,19 @@
             }
 
         }
-        
+        .kontakt_left_box, .kontakt_right_box{
+            padding:20px
+        }
         &:before {
             content: "";
             display: block;
             position: absolute;
             border: 50px solid transparent;
             border-bottom: 50px solid $base-color;
-            bottom: 92%;
-            left: -7%;
+            top: -10px;
+            left: -10px;
             box-shadow: 0px 7px 6px -9px black;
-            transform: rotate(315deg);
+            transform: translate(-50%, -50%)  rotate(315deg);
           }
         &::after {
             content: "";
@@ -66,10 +71,10 @@
             position: absolute;
             border: 50px solid transparent;
             border-bottom: 50px solid $base-color;
-            bottom: -12%;
-            right: -6%;
+            bottom: -10px;
+            right: -10px;
             box-shadow: 0px 7px 6px -9px black;
-            transform: rotate(135deg);
+            transform: translate(50%, 50%) rotate(135deg);
           }
          p{
              padding: 0 20px 0 20px;

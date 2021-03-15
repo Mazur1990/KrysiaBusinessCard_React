@@ -1,21 +1,16 @@
 @import '../../style/variables.scss';
-
 .omnie_background{
     height: 100%;
     background-color: $base-color;
     padding-bottom: 45px;
-    // overflow: hidden;
     .row{
         @media  (min-width: 992px) {
-
         }
     }
-
     img{
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.288);
         height:600px;
         width: auto;
- 
     }
     .omnie_container{
         display: flex;
@@ -23,9 +18,7 @@
             flex-direction: column;
         }
     }
- 
     .omnie_text{
-        
         margin-top: 3rem;
         h1{
             text-align: center;
@@ -43,17 +36,14 @@
                 height: 20px;
                 background: $text-color;
                 width: 100%;
-
               }
-       
         }
-   
         .omnie_box{
-            
             background-color: $secondary-color;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 5px 0 rgba(0, 0, 0, 0.288);
             padding:20px;
             width: 100%;
+            margin-top: 30px;
             h3{
                 font-size: 1rem;
                 text-indent: 1rem;
@@ -61,37 +51,37 @@
                 color:$base-color;
                 text-align: justify;
             }
-            // &:before {
-            //     content: "";
-            //     display: block;
-            //     position: absolute;
-            //     border: 50px solid transparent;
-            //     border-bottom: 50px solid $base-color;
-            //     bottom: 75%;
-            //     left: -8%;
-            //     box-shadow: 0px 7px 6px -9px black;
-            //     transform: rotate(315deg);
-            //   }
-            // &:after {
-
-            //     content: "";
-            //     display: block;
-            //     position: absolute;
-            //     border: 50px solid transparent;
-            //     border-bottom: 50px solid $base-color;
-            //     bottom: -9%;
-            //     right: -8%;
-            //     box-shadow: 0px 7px 10px -9px black;
-            //     transform: rotate(135deg);
-
-            //   }
-    
-              
-
+            &:before {
+                content: "";
+                display: block;
+                position: absolute;
+                border: 50px solid transparent;
+                border-bottom: 50px solid $base-color;
+                top:10rem;
+                left: 0px;
+                box-shadow: 0px 7px 6px -9px black;
+                transform: translate(-50%, -50%)  rotate(315deg);
+                @media  (max-width: 767.98px) {
+                    top:5rem;
+                }
+                @media (max-width: 575.98px) {
+                    top:10rem;
+                }
+              }
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                border: 50px solid transparent;
+                border-bottom: 50px solid $base-color;
+                bottom: -10px;
+                right:5px;
+                box-shadow: 0px 7px 6px -9px black;
+                transform: translate(50%, 50%) rotate(135deg);
+              }
         }
     }
 }
-
 @media (max-width: 575.98px) {
     .omnie_background{
         height: 100%;
@@ -100,21 +90,6 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
-
-        }
-        .omnie_text{
-            margin-top: -2rem;
-            .omnie_box{
-                h3{
-                    font-size: 1rem;
-                }
-                &:before {
-                   display: none;
-                  }
-                &:after {
-                    display: none;
-                  }
-            }
         }
     }
 }
@@ -125,27 +100,12 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
-
         }
         .omnie_text{
             margin-top: -2rem;
-            .omnie_box{
-       
-                &:before {
-                    // display: none;
-                    bottom: 83%;
-                    left: -9%;
-                  }
-                &:after {
-                    bottom: -9%;
-                    right: -8%;
-                  }
- 
-            }
         }
     }
 }
-
 @media (min-width: 768px) and (max-width: 991.98px) {
     .omnie_background{
         img{
@@ -153,25 +113,10 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
-
         }
-        .omnie_text{
-            margin-top: -2rem;
-            .omnie_box{
-         
-                &:before {
-                    bottom: 81%;
-                    left: -7%;
-                  }
-                &:after {
-                    bottom: -13%;
-                    right: -7%;
-                  }
-            }
-        }
+       
     }
 }
-
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .omnie_background{
         img{
@@ -180,26 +125,5 @@
             margin-left: auto;
             margin-right: auto;
         }
-        .omnie_text{
-            margin-top: 1rem;
-            .omnie_box{
-          
-                &:before {
-                    bottom: 81%;
-                    left: -10%;
-                  }
-                &:after {
-                    bottom: -8%;
-                    right: -9%;
-                  }
-            }
-        }
     }
 }
-
-// @media (min-width: 1200px) and (max-width:1599px) {
-//     .omnie_background{
-//         height: 100%;
-//         padding-bottom: 40px;
-//     }
-// }
