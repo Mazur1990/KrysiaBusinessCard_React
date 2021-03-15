@@ -5,14 +5,9 @@ import { Link } from "react-scroll";
 
 class Navbar extends Component {
     state = { clicked: false}
-
     handleClick = () => {
-        console.log('click')
         this.setState({clicked: !this.state.clicked})
     }
-
-
-
     render() {
         return (
             <nav className="NavbarItems">
@@ -41,7 +36,6 @@ class Navbar extends Component {
                                             {item.title}
                                 </Link>
                             </li>
-
                         )
                     })}
                 </ul>
@@ -49,5 +43,4 @@ class Navbar extends Component {
         )
     }
 }
-
 export {Navbar}
