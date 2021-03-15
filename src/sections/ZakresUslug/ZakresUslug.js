@@ -1,14 +1,9 @@
 import React from 'react';
 import {Zakresy} from './Zakresy/Zakresy'
-
-
-
 const ZakresUslug = () => {
-
     const columnOne = ["Stany depresyjne", "Stany lękowe"];
-    const columnTwo = [,"Niskie poczucie własnej wartości", "Kryzys życiowy, emocjonalny, zawodowy","Kryzys w związku"];
+    const columnTwo = ["Niskie poczucie własnej wartości", "Kryzys życiowy, emocjonalny, zawodowy","Kryzys w związku"];
     const columnThree = ["Stres","Nerwica"]
-    
     return(
         <div className="zakres_background" id="3">
             <div className="zakres_title">
@@ -26,12 +21,8 @@ const ZakresUslug = () => {
                     <Zakresy  text={columnThree} />
                 </div>
                 </div>
-
-         
             </div>
         </div>
     )
-    
 }
-
 export { ZakresUslug }

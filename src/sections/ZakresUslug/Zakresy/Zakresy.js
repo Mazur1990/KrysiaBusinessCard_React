@@ -1,7 +1,5 @@
 import React from 'react';
-
-
-const Zakresy = ({className, text}) => {
+const Zakresy = ({text}) => {
     return(
         <div className="zakresy">
             {/* <i className={className}></i> */}
@@ -14,7 +12,5 @@ const Zakresy = ({className, text}) => {
         </div>
         </div>
     )
-    
 }
-
 export { Zakresy }

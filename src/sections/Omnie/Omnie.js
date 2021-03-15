@@ -1,5 +1,4 @@
 import React from 'react';
-import {Image} from "./Image/Image"
 import {OmnieText} from "./OmnieText/OmnieText"
 import { Parallax } from 'react-scroll-parallax';
 import pictureOne from '../../images/omnie3.JPG'
@@ -12,7 +11,7 @@ const Omnie = () => {
               <div className='row'>
                     <div className="col-xl-6 col-lg-6  col-xs-12" style={{zIndex:10}}>
                         <Parallax className="custom-class" y={[15,-27]} tagOuter="figure">
-                                <img src={pictureOne} />
+                                <img src={pictureOne} alt="Krystyna Śmieszniak"/>
                         </Parallax>
                     </div>
                     <div className="omnie_container col-xl-6 col-lg-6  col-xs-12">

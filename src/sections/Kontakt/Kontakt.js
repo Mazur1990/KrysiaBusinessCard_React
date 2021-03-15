@@ -16,7 +16,7 @@ const Kontakt = () => {
                     <p>Wrocław</p>
                 </div>
                 <div className="kontakt_middle_box col-12 col-md-6">
-                    <img src={Image} />
+                    <img src={Image} alt="Logo"/>
                 </div>
                 <div className="kontakt_right_box col-12 col-md-3">
                     <p>Zapraszam na stronę:</p>
